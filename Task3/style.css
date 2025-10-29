@@ -1,0 +1,57 @@
+
+    body {
+      background-color: #f5f6fa;
+      font-size: 14px;
+      color: #333;
+    }
+    .card {
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border-radius: 6px;
+    }
+    label {
+      font-weight: 500;
+      color: #333;
+    }
+    input, select {
+      font-size: 14px !important;
+    }
+    .form-control:focus, .form-select:focus {
+      box-shadow: none;
+      border-color: #bbb;
+    }
+    .section-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #000;
+    }
+    .btn-light {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+    }
+    .table th {
+      background-color: #f9fafc;
+      font-weight: 600;
+      color: #555;
+      vertical-align: middle;
+    }
+    .table td {
+      vertical-align: middle;
+    }
+    .btn-save {
+      background-color: #00b894;
+      color: #fff;
+      font-weight: 500;
+    }
+    .btn-save:hover {
+      background-color: #009974;
+    }
+  
+
+    .bi-plus {
+    font-weight: 900;
+}
+
+thead tr th {
+   background-color: #555;
+}
