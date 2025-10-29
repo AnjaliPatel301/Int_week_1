@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    *{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,6 +34,34 @@
       margin-bottom: 15px;
     }
 
+
+.icon-box {
+  background-color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-box:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.1);
+}
+
+.icon-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  background-color: #f8f9fa; 
+  padding: 12px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
     .company-logo {
       font-size: 50px;
       color: black;
@@ -79,7 +107,7 @@
  
 </style>
 <body>
-<div class="mx-2 my-2">
+<div class=" my-3 mx-5 rounded-3 position-relative">
   <div class="quotation-box">
     
    
@@ -181,7 +209,15 @@
 
   </div>
 </div>
+ 
+<div class="conatiner justify-content-center m-2 translate-middle-y bg-light  p-2 rounded-3 shadow-lg " style=" gap: 20px;position: absolute;top:7rem;right: 0px;">
+  <div class="col-md-2"><i class="bi bi-copy bg-white fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-pencil-square  fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-file-earmark-pdf  fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-file-break-fill fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-chevron-left fs-4"></i></div>
 
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
