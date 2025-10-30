@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation Preview</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    body {
+      background-color: #f4f6fa;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .quotation-box {
+        width: 100%;
+      background-color: #fff;
+      padding: 36px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding-bottom: 200px;
+    }
+
+    .quotation-header {
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+
+.icon-box {
+  background-color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-box:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.1);
+}
+
+.icon-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  background-color: #f8f9fa; 
+  padding: 12px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+    .company-logo {
+      font-size: 50px;
+      color: black;
+    }
+
+    .status-badge {
+      background-color: #f8d7da;
+      color: #c82333;
+      font-weight: 600;
+      padding: 5px 10px;
+      font-size: 13px;
+    }
+
+    .btn-outline-primary {
+      font-size: 14px;
+      padding: 4px 12px;
+    }
+
+    .table th {
+      background-color: #f8f9fc;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .table td {
+      font-size: 14px;
+    }
+
+    .total-box {
+      max-width: 300px;
+      margin-left: auto;
+    }
+
+    .total-box table td {
+      padding: 6px 8px;
+      font-size: 14px;
+    }
+
+    .client-note {
+      margin-top: 20px;
+    }
+ 
+</style>
+<body>
+<div class=" d-flex justify-content-end ... " style="position: absolute; top:4rem; right: 60px">
+<div class="row">
+
+  <div class="col-md-12">
+     <div class="quotation-box">
+    
+   
+    <ul class="nav nav-tabs mb-3 border ">
+      <li class="nav-item">
+        <a class="nav-link bg-primary-subtle rounded-0 text-primary-emphasis  " style="border-top: 3px solid rgb(58, 58, 117);" href="index.html">Preview</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link text-black " href="#">Attachments</a>
+      </li>
+      <li class="nav-item px-2 ms-4">
+         <a class="nav-link text-black " >       <i class=" bi bi-bounding-box-circles"></i> </a>
+        
+      </li>
+    <li>
+
+    </li>
+    </ul>
+
+   
+    <div class="quotation-header d-flex justify-content-between align-items-start">
+      <div>
+        <span class="btn btn-outline-danger rounded-1 ">DRAFT</span>
+        <hr/>
+        <h5 class="mt-2 fw-semibold">QT-0094</h5>
+        <div class=" align-items-center">
+          <i class="bi bi-apple company-logo me-2"></i>
+          <div>
+            <strong>SalesQueen Software Solutions</strong><br>
+            Old No: 11 New No: 20, G.Floor, 2nd Cross Street, Indira<br/> Nagar Adyar<br>
+            Chennai, 4035, India, 600020<br>
+            GST Number: <strong>GST-33EKIPS2810E1ZD</strong>
+          </div>
+        </div>
+      </div>
+      <div class="text-end">
+        <div class="btn-group mb-2">
+           <button style="background-color: rgb(62, 62, 118);" class=" text-white btn   rounded-1 dropdown-toggle" data-bs-toggle="dropdown">Convert</button>
+          <button class="btn  rounded-1 dropdown-toggle" data-bs-toggle="dropdown">More</button>
+
+        </div>
+        <hr/>
+        <div class="mt-2">
+          <p class="mb-1"><strong>Estimate Date:</strong> 4th Oct 2025</p>
+          <p class="mb-0"><strong>Expiry Date:</strong> 11th Oct 2025</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        <thead>
+          <tr>
+            <th style="width: 5%">#</th>
+            <th>Item</th>
+            <th>HSN/SAC</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Tax</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Volley Ball</td>
+            <td></td>
+            <td>1</td>
+            <td>100</td>
+            <td></td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="total-box">
+      <table class="table table-bordered mb-0">
+        <tbody>
+          <tr>
+            <td class="bg-light "><strong>Subtotal</strong></td>
+            <td class="text-end">100</td>
+          </tr>
+          <tr>
+            <td class="bg-light"><strong>Total</strong></td>
+            <td class="text-end">100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+   
+    <div class="client-note">
+      <p><strong>Client Note:</strong></p>
+      <p class="text-muted mb-0">11</p>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+</div>
+ 
+<div class="conatiner justify-content-center m-2 translate-middle-y bg-light  p-2 rounded-3 shadow-lg " style=" gap: 20px;position: absolute;top:8.3rem;right: 0px;">
+  <div class="col-md-2"><i class="bi bi-copy bg-white fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-pencil-square  fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-file-earmark-pdf  fs-4"></i></div>
+  <div class="col-md-2"><i class="bi bi-file-break-fill fs-4"></i></div>
+ <div class="col-md-2">
+  <i class="bi bi-chevron-left fs-4" onclick="window.location.href='index.html'" style="cursor: pointer;"></i>
+</div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
+
+
+
+
+
+
+<!-- <table class="table table-hover align-middle table-bordered text-start">
+       <thead class="table-light">
+  <tr>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Customer Name</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Quotation ID</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Sub Total</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Tax Total</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Total</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Date</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Expiry Date</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+    <th>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Tags</span>
+        <i class="ri-expand-up-down-fill text-secondary"></i>
+      </div>
+    </th>
+  </tr>
+</thead>
+
+
+        <tbody>
+          <tr>
+            <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Kia</a>
+
+        <div class="action-icons mt-1">
+          <a href="#" onclick="toggleView('QT-0013')" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0013</td>
+            <td>200</td>
+            <td>10</td>
+            <td>210</td>
+            <td>10/10/2025</td>
+            <td class="text-danger">17/10/2025</td>
+            <td>
+               </td>
+          </tr>
+
+          <tr class="data-row">
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Kia</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0012</td>
+            <td>1000</td>
+            <td>0</td>
+            <td>1000</td>
+            <td>09/10/2025</td>
+            <td class="text-danger">16/10/2025</td>
+            <td>
+              <button class="tag-badge  ">Invoiced - INV-0009</button>
+              <button class="btn btn-sm btn-outline-danger bg-white">Accepted</button>
+            </td>
+          </tr>
+
+          <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Gennie</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            
+            <td>QT-0011</td>
+            <td>2000</td>
+            <td>95</td>
+            <td>2100</td>
+            <td>12/09/2025</td>
+            <td class="text-danger">19/09/2025</td>
+            <td>
+              <button class="tag-badge">Joy</button>
+              <button class="tag-badge">Invoiced - INV-0009</button>
+              <button class="btn btn-sm btn-outline-danger bg-white">Accepted</button>
+            </td>
+          </tr>
+
+          <tr class="tbl-tr">
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Loyal</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0010</td>
+            <td>20</td>
+            <td>0</td>
+            <td>20</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td>
+              <button class="tag-badge">Havy</button>
+              <button class="tag-badge">Invoiced - INV-0010</button>
+              <button class="btn btn-sm btn-outline-danger bg-white">Accepted</button>
+            </td>
+          </tr>
+
+          <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Unlimited</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0009</td>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td></td>
+          </tr>
+<tr>
+    <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Loyal</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0008</td>
+            <td>20</td>
+            <td>0</td>
+            <td>20</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td>
+               </td>
+          </tr>
+          <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Loyal</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0007</td>
+            <td>20</td>
+            <td>0</td>
+            <td>10</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td>
+              </td>
+          </tr>
+          <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Loyal</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0006</td>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Nyka Ltd</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0005</td>
+            <td>29180</td>
+            <td>1459</td>
+            <td>30839</td>
+            <td>20/09/2025</td>
+            <td class="text-danger">15/09/2025</td>
+            <td>
+                <button class="tag-badge">Joy</button>
+                <button class="tag-badge">Invoiced - INV-0011</button>
+                <button class="btn btn-sm btn-outline-danger bg-white">Accepted</button>
+            </td>
+          </tr>
+           <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Unlimited</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0009</td>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td>
+              <button class="tag-badge">Deal</button>
+              <button class="tag-badge">Joy</button>
+              <button class="tag-badge">Hepsiba Pvt Limited</button>
+              <button class="tag-badge">Invoiced - INV-0002</button>
+              <button class="btn btn-sm btn-outline-danger bg-white">Accepted</button>
+            </td>
+          </tr>
+            <tr>
+                <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Krishna Ltd</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0002</td>
+            <td>5000</td>
+            <td>0</td>
+            <td>5000</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td></td>
+          </tr>
+           <tr>
+              <td class="hover-action">
+        <a href="#" class="fw-semibold text-decoration-none text-dark">Krishna Ltd</a>
+
+        <div class="action-icons mt-1">
+          <a href="view.html" data-bs-toggle="tooltip" title="View">
+            <i class="bi bi-eye-fill text-info"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Edit">
+            <i class="bi bi-pencil-fill text-danger"></i>
+          </a>
+          <a href="#" data-bs-toggle="tooltip" title="Delete">
+            <i class="bi bi-trash3-fill text-success"></i>
+          </a>
+           <a href="#" data-bs-toggle="tooltip" title="More">
+            <i class="bi bi-three-dots-vertical"></i>
+          </a>
+        </div>
+      </td>
+            <td>QT-0001</td>
+            <td>5000</td>
+            <td>0</td>
+            <td>5000</td>
+            <td>11/09/2025</td>
+            <td class="text-danger">18/09/2025</td>
+            <td></td>
+          </tr>
+        
+        </tbody>
+      </table> -->
